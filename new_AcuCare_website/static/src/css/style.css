@@ -1,0 +1,44 @@
+/* Font Awesome Import */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+
+:root {
+    --primary: #1a73e8;
+    --primary-dark: #0d47a1;
+    --primary-light: #e8f0fe;
+    --secondary: #34a853;
+    --accent: #fbbc04;
+    --dark: #202124;
+    --dark-gray: #5f6368;
+    --light-gray: #f8f9fa;
+    --medium-gray: #dadce0;
+    --white: #ffffff;
+}
+
+/* Scoped reset */
+.acucare-scope * {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+}
+
+.acucare-scope body {
+    color: var(--dark);
+    line-height: 1.6;
+    background-color: var(--white);
+    margin: 0;
+}
+
+/* Your layout structure */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* --- Add all your real CSS below this point --- */
+
+
+/* Hide default Odoo footer */
+footer#bottom {
+    display: none !important;
+}
