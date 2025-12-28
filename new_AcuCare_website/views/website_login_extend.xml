@@ -1,0 +1,105 @@
+<odoo>
+
+    <!-- Extend Odoo 19 Login Page -->
+    <template id="web_login_extend_hmc" inherit_id="web.login">
+        <xpath expr="//form" position="before">
+            <t t-if="request.params.get('signup') == 'success'">
+                <div class="alert alert-success text-center mt-3">
+                    ✅ Your account has been created successfully.
+                    Please log in.
+                </div>
+            </t>
+
+            <t t-if="request.params.get('signup') == 'failed'">
+                <div class="alert alert-danger text-center mt-3">
+                    ❌ Account creation failed.
+                    Please try again or contact support.
+                </div>
+            </t>
+
+            <t t-if="request.params.get('signup') == 'exists'">
+                <div class="alert alert-warning text-center mt-3">
+                    ⚠️ An account with this email already exists.
+                    Please log in.
+                </div>
+            </t>
+        </xpath>
+
+        <!-- ❌ Remove "Log in as superuser" -->
+        <xpath expr="//button[@name='redirect' and @value='/web/become']" position="replace"/>
+
+        <!-- ✅ Add Signup Link -->
+        <xpath expr="//div[hasclass('oe_login_buttons')]" position="after">
+            <div class="container text-center mt-4 mb-4">
+                <p class="fs-6">
+                    Don’t have an account?
+                    <a href="/acucare/signup" style="color:#1a73e8 !important;" class="fw-bold text-primary">
+                        Create New Account
+                    </a>
+                </p>
+            </div>
+        </xpath>
+    </template>
+
+    <!-- AcuCare Signup Template (unchanged) -->
+    <template id="acucare_signup" name="Acucare Signup">
+        <t t-call="website.layout">
+            <div class="hmc-signup-section" style="background-color: #f0f4f8; padding: 60px 0; min-height: 100vh;">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-md-8 col-lg-6">
+                            <div class="card shadow-lg border-0 rounded-lg" style="background: white; padding: 40px;">
+                                <div class="text-center mb-4">
+                                    <h2 style="color: #2c3e50; font-weight: 800;">Create Account</h2>
+                                </div>
+
+                                <!-- Error Message Display -->
+                                <t t-if="error_message">
+                                    <div class="alert alert-danger alert-dismissible fade show" role="alert" style="border-radius: 8px; margin-bottom: 20px;">
+                                        <i class="fa fa-exclamation-triangle me-2"></i>
+                                        <t t-esc="error_message"/>
+                                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                    </div>
+                                </t>
+
+                                <form action="/acucare/signup/submit" method="post">
+                                    <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+
+                                    <div class="mb-3">
+                                        <label class="form-label fw-bold" style="font-size: 0.9rem;">Full Name</label>
+                                        <input type="text" name="name" class="form-control" placeholder="Name" required="1" style="height: 48px; background-color: #f9f9f9;" t-att-value="name if 'name' in request.params else ''"/>
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label class="form-label fw-bold" style="font-size: 0.9rem;">Email Address</label>
+                                        <input type="email" name="login" class="form-control" placeholder="username@gmail.com" required="1" style="height: 48px; background-color: #f9f9f9;" t-att-value="login if 'login' in request.params else ''"/>
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label class="form-label fw-bold" style="font-size: 0.9rem;">Password</label>
+                                        <input type="password" name="password" class="form-control" placeholder="••••••••" required="1" style="height: 48px; background-color: #f9f9f9;"/>
+                                    </div>
+
+                                    <div class="mb-4">
+                                        <label class="form-label fw-bold" style="font-size: 0.9rem;">Confirm Password</label>
+                                        <input type="password" name="confirm_password" class="form-control" placeholder="••••••••" required="1" style="height: 48px; background-color: #f9f9f9;"/>
+                                    </div>
+
+                                    <div class="d-grid">
+                                        <button type="submit" class="btn btn-primary btn-lg" style="background-color: #4199d5; border: none; font-weight: 700;">
+                                            Sign Up
+                                        </button>
+                                    </div>
+                                </form>
+
+                                <div class="text-center mt-4">
+                                    <small class="text-muted">Already have an account? <a href="/web/login" style="color: #4199d5; text-decoration: none;">Sign In</a></small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </t>
+    </template>
+</odoo>
