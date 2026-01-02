@@ -626,392 +626,396 @@
         <field name="key">new_AcuCare_website.page_acucare_home</field>
         <field name="arch" type="xml">
             <t t-call="website.layout">
-                <div class="acucare-scope">
+                <div id="wrapwrap" class="acucare-scope oe_structure oe_empty">
+                    <div id="wrap" class="oe_structure oe_empty">
 
-                    <section class="hero" id="home">
-                        <div class="container">
-                            <div class="hero-content">
-                                <h1>Shaping the future of <span>compliant, intelligent</span> healthcare delivery.</h1>
-                                <p>AcuCare Systems helps regulated healthcare providers transform governance, quality and compliance into a connected digital ecosystem.</p>
-                                <p>Our AI-assisted platform and consultancy expertise give organisations the tools to improve safety, outcomes and operational certainty.</p>
-                                <div class="hero-buttons">
-                                    <a href="#contact" class="btn btn-primary">
-                                        <i class="fa fa-calendar-check-o"></i>
-                                        Book a discovery call
-                                    </a>
-                                    <a href="#" class="btn btn-secondary">
-                                        <i class="fa fa-download"></i>
-                                        Download overview brochure
-                                    </a>
+                        <section class="hero" id="home">
+                            <div class="container">
+                                <div class="hero-content">
+                                    <h1 t-editable="1">Shaping the future of <span>compliant, intelligent</span> healthcare delivery.</h1>
+                                    <div class="oe_structure oe_empty" t-editable="1">
+                                        <p>AcuCare Systems helps regulated healthcare providers transform governance, quality and compliance into a connected digital ecosystem.</p>
+                                        <p>Our AI-assisted platform and consultancy expertise give organisations the tools to improve safety, outcomes and operational certainty.</p>
+                                    </div>
+                                    <div class="hero-buttons">
+                                        <a href="#contact" class="btn btn-primary">
+                                            <i class="fa fa-calendar-check-o"></i>
+                                            Book a discovery call
+                                        </a>
+                                        <a href="#" class="btn btn-secondary">
+                                            <i class="fa fa-download"></i>
+                                            Download overview brochure
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </section>
+                        </section>
 
-                    <section class="what-we-do">
-                        <div class="container">
-                            <div class="section-title">
-                                <div class="section-subtitle">Our Services</div>
-                                <h2>What We Do</h2>
-                                <p>AcuCare Systems builds technology and advisory solutions that make healthcare governance measurable, intelligent and scalable.</p>
+                        <section class="what-we-do">
+                            <div class="container">
+                                <div class="section-title">
+                                    <div class="section-subtitle">Our Services</div>
+                                    <h2 t-editable="1">What We Do</h2>
+                                    <p t-editable="1">AcuCare Systems builds technology and advisory solutions that make healthcare governance measurable, intelligent and scalable.</p>
+                                </div>
+                                <div class="features-grid oe_structure oe_empty">
+                                    <div class="feature-card">
+                                        <div class="feature-icon">
+                                            <i class="fa fa-laptop"></i>
+                                        </div>
+                                        <h3 t-editable="1">Unified Compliance Platform</h3>
+                                        <p t-editable="1">Our flagship platform, <strong>AcuCare OS</strong>, turns CQC compliance, governance, quality and workforce assurance into a unified, data-driven operating system.</p>
+                                    </div>
+                                    <div class="feature-card">
+                                        <div class="feature-icon">
+                                            <i class="fa fa-user-md"></i>
+                                        </div>
+                                        <h3 t-editable="1">Expert Advisory Services</h3>
+                                        <p t-editable="1">We bring together clinical leadership, regulatory experience and engineering excellence to help providers operate above compliance standards.</p>
+                                    </div>
+                                    <div class="feature-card">
+                                        <div class="feature-icon">
+                                            <i class="fa fa-android"></i>
+                                        </div>
+                                        <h3 t-editable="1">AI-Assisted Workflows</h3>
+                                        <p t-editable="1">Human-in-the-loop AI that improves documentation, insights and triage — never replacing clinicians.</p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="features-grid">
-                                <div class="feature-card">
-                                    <div class="feature-icon">
-                                        <i class="fa fa-laptop"></i>
-                                    </div>
-                                    <h3>Unified Compliance Platform</h3>
-                                    <p>Our flagship platform, <strong>AcuCare OS</strong>, turns CQC compliance, governance, quality and workforce assurance into a unified, data-driven operating system.</p>
-                                </div>
-                                <div class="feature-card">
-                                    <div class="feature-icon">
-                                        <i class="fa fa-user-md"></i>
-                                    </div>
-                                    <h3>Expert Advisory Services</h3>
-                                    <p>We bring together clinical leadership, regulatory experience and engineering excellence to help providers operate above compliance standards.</p>
-                                </div>
-                                <div class="feature-card">
-                                    <div class="feature-icon">
-                                        <i class="fa fa-android"></i>
-                                    </div>
-                                    <h3>AI-Assisted Workflows</h3>
-                                    <p>Human-in-the-loop AI that improves documentation, insights and triage — never replacing clinicians.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
+                        </section>
 
-                    <section class="why-choose">
-                        <div class="container">
-                            <div class="section-title">
-                                <div class="section-subtitle">Our Advantages</div>
-                                <h2>Why Healthcare Teams Choose ACS</h2>
-                            </div>
-                            <div class="benefits-container">
-                                <div class="benefits-list">
-                                    <div class="benefit-item">
-                                        <div class="benefit-icon">
-                                            <i class="fa fa-check-circle"></i>
-                                        </div>
-                                        <div class="benefit-content">
-                                            <h3>Built and led by NHS consultants and digital health engineers</h3>
-                                            <p>Our solutions are grounded in real clinical experience and technical expertise.</p>
-                                        </div>
-                                    </div>
-                                    <div class="benefit-item">
-                                        <div class="benefit-icon">
-                                            <i class="fa fa-check-circle"></i>
-                                        </div>
-                                        <div class="benefit-content">
-                                            <h3>Designed for real-world workflows, not checklists</h3>
-                                            <p>We understand the practical challenges of healthcare delivery.</p>
-                                        </div>
-                                    </div>
-                                    <div class="benefit-item">
-                                        <div class="benefit-icon">
-                                            <i class="fa fa-check-circle"></i>
-                                        </div>
-                                        <div class="benefit-content">
-                                            <h3>Supports CQC, NHS, international standards and Net Zero goals</h3>
-                                            <p>Comprehensive compliance that aligns with your organizational values.</p>
-                                        </div>
-                                    </div>
-                                    <div class="benefit-item">
-                                        <div class="benefit-icon">
-                                            <i class="fa fa-check-circle"></i>
-                                        </div>
-                                        <div class="benefit-content">
-                                            <h3>Human-in-the-loop AI</h3>
-                                            <p>AI that supports clinical decision-making without replacing human expertise.</p>
-                                        </div>
-                                    </div>
-                                    <div class="benefit-item">
-                                        <div class="benefit-icon">
-                                            <i class="fa fa-check-circle"></i>
-                                        </div>
-                                        <div class="benefit-content">
-                                            <h3>Cloud-secure, scalable and interoperable</h3>
-                                            <p>Works seamlessly with the systems you already use.</p>
-                                        </div>
-                                    </div>
+                        <section class="why-choose">
+                            <div class="container">
+                                <div class="section-title">
+                                    <div class="section-subtitle">Our Advantages</div>
+                                    <h2 t-editable="1">Why Healthcare Teams Choose ACS</h2>
                                 </div>
-                                <div class="benefits-visual">
-                                    <div class="visual-card">
-                                        <div class="card-header">
-                                            <h3>Precision Healthcare Through Intelligent Compliance</h3>
+                                <div class="benefits-container oe_structure oe_empty">
+                                    <div class="benefits-list">
+                                        <div class="benefit-item">
+                                            <div class="benefit-icon">
+                                                <i class="fa fa-check-circle"></i>
+                                            </div>
+                                            <div class="benefit-content">
+                                                <h3 t-editable="1">Built and led by NHS consultants and digital health engineers</h3>
+                                                <p t-editable="1">Our solutions are grounded in real clinical experience and technical expertise.</p>
+                                            </div>
                                         </div>
-                                        <div class="card-body">
-                                            <p>We don't just digitise governance — we make it intelligent, achievable and continuously improving.</p>
-                                            <div style="margin-top: 20px; display: flex; align-items: center;">
-                                                <div style="width: 50px; height: 50px; background: var(--primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; margin-right: 15px;">
-                                                    <i class="fa fa-shield"></i>
-                                                </div>
-                                                <div>
-                                                    <h4 style="margin: 0;">Compliance as an Advantage</h4>
-                                                    <p style="margin: 5px 0 0; font-size: 0.9rem;">Transform regulatory requirements into operational excellence</p>
+                                        <div class="benefit-item">
+                                            <div class="benefit-icon">
+                                                <i class="fa fa-check-circle"></i>
+                                            </div>
+                                            <div class="benefit-content">
+                                                <h3 t-editable="1">Designed for real-world workflows, not checklists</h3>
+                                                <p t-editable="1">We understand the practical challenges of healthcare delivery.</p>
+                                            </div>
+                                        </div>
+                                        <div class="benefit-item">
+                                            <div class="benefit-icon">
+                                                <i class="fa fa-check-circle"></i>
+                                            </div>
+                                            <div class="benefit-content">
+                                                <h3 t-editable="1">Supports CQC, NHS, international standards and Net Zero goals</h3>
+                                                <p t-editable="1">Comprehensive compliance that aligns with your organizational values.</p>
+                                            </div>
+                                        </div>
+                                        <div class="benefit-item">
+                                            <div class="benefit-icon">
+                                                <i class="fa fa-check-circle"></i>
+                                            </div>
+                                            <div class="benefit-content">
+                                                <h3 t-editable="1">Human-in-the-loop AI</h3>
+                                                <p t-editable="1">AI that supports clinical decision-making without replacing human expertise.</p>
+                                            </div>
+                                        </div>
+                                        <div class="benefit-item">
+                                            <div class="benefit-icon">
+                                                <i class="fa fa-check-circle"></i>
+                                            </div>
+                                            <div class="benefit-content">
+                                                <h3 t-editable="1">Cloud-secure, scalable and interoperable</h3>
+                                                <p t-editable="1">Works seamlessly with the systems you already use.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="benefits-visual">
+                                        <div class="visual-card">
+                                            <div class="card-header">
+                                                <h3>Precision Healthcare Through Intelligent Compliance</h3>
+                                            </div>
+                                            <div class="card-body">
+                                                <p t-editable="1">We don't just digitise governance — we make it intelligent, achievable and continuously improving.</p>
+                                                <div style="margin-top: 20px; display: flex; align-items: center;">
+                                                    <div style="width: 50px; height: 50px; background: var(--primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; margin-right: 15px;">
+                                                        <i class="fa fa-shield"></i>
+                                                    </div>
+                                                    <div>
+                                                        <h4 style="margin: 0;">Compliance as an Advantage</h4>
+                                                        <p style="margin: 5px 0 0; font-size: 0.9rem;">Transform regulatory requirements into operational excellence</p>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </section>
+                        </section>
 
-                    <section class="solutions" id="solutions">
-                        <div class="container">
-                            <div class="section-title">
-                                <div class="section-subtitle">Our Products</div>
-                                <h2>Intelligent Healthcare Solutions</h2>
-                            </div>
-
-                            <div class="solutions-tabs">
-                                <button class="tab-btn active" data-tab="acu-care-os">AcuCare OS</button>
-                                <button class="tab-btn" data-tab="ai-workflows">AI Workflows</button>
-                                <button class="tab-btn" data-tab="consultancy">Consultancy &amp; Academy</button>
-                            </div>
-
-                            <div class="tab-content active" id="acu-care-os">
-                                <div class="solution-card">
-                                    <h3><span class="solution-icon">🚀</span> AcuCare OS: Intelligent Compliance &amp; Governance</h3>
-                                    <p>AcuCare OS is a cloud platform that unifies governance, compliance, quality management and workforce assurance into one fully integrated system.</p>
-                                    <p>Built for regulated service providers, AcuCare OS provides:</p>
-                                    <ul class="feature-list">
-                                        <li>Real-time CQC/aligned governance dashboards</li>
-                                        <li>Digital evidence trails and inspection readiness</li>
-                                        <li>Incident, audit, risk and quality workflows</li>
-                                        <li>Workforce competency and document control</li>
-                                        <li>Analytics, reporting and AI-supported documentation</li>
-                                    </ul>
-                                    <p style="margin-top: 20px; font-weight: 500; color: var(--primary);">Compliance stops being a report — it becomes an operational advantage.</p>
+                        <section class="solutions" id="solutions">
+                            <div class="container">
+                                <div class="section-title">
+                                    <div class="section-subtitle">Our Products</div>
+                                    <h2 t-editable="1">Intelligent Healthcare Solutions</h2>
                                 </div>
-                            </div>
 
-                            <div class="tab-content" id="ai-workflows">
-                                <div class="solution-card">
-                                    <h3><span class="solution-icon">💬</span> AI-Assisted, Human-Verified Workflows</h3>
-                                    <p>AcuCare OS uses AI responsibly to support — not replace — clinical and managerial expertise.</p>
-                                    <p>AI-assisted features include:</p>
-                                    <ul class="feature-list">
-                                        <li>Drafting documentation for audits, incidents and governance reports</li>
-                                        <li>Summarising conversations, tasks and supporting evidence</li>
-                                        <li>Assisting with message triage and workflow prioritisation</li>
-                                        <li>Suggesting insights for improvement and risk mitigation</li>
-                                    </ul>
-                                    <p style="margin-top: 20px;">All AI outputs require human oversight and approval, ensuring safety, accountability and regulatory alignment.</p>
+                                <div class="solutions-tabs">
+                                    <button class="tab-btn active" data-tab="acu-care-os">AcuCare OS</button>
+                                    <button class="tab-btn" data-tab="ai-workflows">AI Workflows</button>
+                                    <button class="tab-btn" data-tab="consultancy">Consultancy &amp; Academy</button>
                                 </div>
-                            </div>
 
-                            <div class="tab-content" id="consultancy">
-                                <div class="solution-card">
-                                    <h3><span class="solution-icon">🔎</span> Consultancy &amp; ACS Academy</h3>
-                                    <p>Alongside our platform, AcuCare Systems provides specialist advisory support to healthcare providers across the UK and internationally.</p>
-                                    <p>Services include:</p>
-                                    <ul class="feature-list">
-                                        <li>CQC compliance + governance transformation</li>
-                                        <li>Quality improvement and risk management frameworks</li>
-                                        <li>Digital adoption and workflow redesign</li>
-                                        <li>Training through ACS Academy</li>
-                                        <li>Capability building in clinical governance and digital quality systems</li>
-                                    </ul>
-                                    <p style="margin-top: 20px;">We combine expertise, technology and training to make long-term compliance sustainable.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section class="about" id="about">
-                        <div class="container">
-                            <div class="section-title">
-                                <div class="section-subtitle">Our Company</div>
-                                <h2>About AcuCare Systems</h2>
-                            </div>
-                            <div class="about-content">
-                                <div class="about-text">
-                                    <h3>Who We Are</h3>
-                                    <p>AcuCare Systems Ltd is a UK-based digital health company focused on governance, compliance and clinical quality.</p>
-                                    <p>We serve hospitals, clinics, community services, social care and independent providers that operate under regulated standards.</p>
-                                    <p>Our multidisciplinary teams include:</p>
-                                    <ul class="feature-list">
-                                        <li>Senior NHS consultants and medical leaders</li>
-                                        <li>Governance, policy and compliance specialists</li>
-                                        <li>Software engineers, data scientists and product experts</li>
-                                    </ul>
-                                    <p>We unite real clinical insight with scalable digital engineering to deliver tools that actually work in practice.</p>
-
-                                    <h3 style="margin-top: 30px;">What Makes Us Different</h3>
-                                    <ul class="feature-list">
-                                        <li>Designed by clinicians, validated by governance experts</li>
-                                        <li>Balanced AI — supporting decision-making, never replacing it</li>
-                                        <li>Built for multi-site, multi-service organisations</li>
-                                        <li>Scalable engineering and transparent UK-led oversight</li>
-                                        <li>Equal focus on people, process and platform — not just software</li>
-                                    </ul>
-                                    <p style="margin-top: 20px; font-weight: 500; color: var(--primary);">AcuCare Systems doesn't simply deliver software; we help build safer, more accountable organisations.</p>
-
-                                    <div class="stats">
-                                        <div class="stat-item">
-                                            <div class="stat-number">50+</div>
-                                            <div class="stat-label">Healthcare Partners</div>
-                                        </div>
-                                        <div class="stat-item">
-                                            <div class="stat-number">100%</div>
-                                            <div class="stat-label">Compliance Success</div>
-                                        </div>
-                                        <div class="stat-item">
-                                            <div class="stat-number">24/7</div>
-                                            <div class="stat-label">Support Available</div>
-                                        </div>
+                                <div class="tab-content active" id="acu-care-os">
+                                    <div class="solution-card">
+                                        <h3><span class="solution-icon">🚀</span> <span t-editable="1">AcuCare OS: Intelligent Compliance &amp; Governance</span></h3>
+                                        <p t-editable="1">AcuCare OS is a cloud platform that unifies governance, compliance, quality management and workforce assurance into one fully integrated system.</p>
+                                        <p>Built for regulated service providers, AcuCare OS provides:</p>
+                                        <ul class="feature-list">
+                                            <li>Real-time CQC/aligned governance dashboards</li>
+                                            <li>Digital evidence trails and inspection readiness</li>
+                                            <li>Incident, audit, risk and quality workflows</li>
+                                            <li>Workforce competency and document control</li>
+                                            <li>Analytics, reporting and AI-supported documentation</li>
+                                        </ul>
+                                        <p style="margin-top: 20px; font-weight: 500; color: var(--primary);">Compliance stops being a report — it becomes an operational advantage.</p>
                                     </div>
                                 </div>
-                                <div class="about-image">
-                                    <div class="about-image-content">
-                                        <i class="fa fa-heartbeat" style="font-size: 4rem; margin-bottom: 20px;"></i>
-                                        <h3 style="font-size: 1.8rem; margin-bottom: 15px;">Our Vision</h3>
-                                        <p>AcuCare Systems aims to be the trusted operating system for clinical governance and regulatory compliance across healthcare organisations worldwide.</p>
+
+                                <div class="tab-content" id="ai-workflows">
+                                    <div class="solution-card">
+                                        <h3><span class="solution-icon">💬</span> <span t-editable="1">AI-Assisted, Human-Verified Workflows</span></h3>
+                                        <p t-editable="1">AcuCare OS uses AI responsibly to support — not replace — clinical and managerial expertise.</p>
+                                        <p>AI-assisted features include:</p>
+                                        <ul class="feature-list">
+                                            <li>Drafting documentation for audits, incidents and governance reports</li>
+                                            <li>Summarising conversations, tasks and supporting evidence</li>
+                                            <li>Assisting with message triage and workflow prioritisation</li>
+                                            <li>Suggesting insights for improvement and risk mitigation</li>
+                                        </ul>
+                                        <p style="margin-top: 20px;">All AI outputs require human oversight and approval, ensuring safety, accountability and regulatory alignment.</p>
+                                    </div>
+                                </div>
+
+                                <div class="tab-content" id="consultancy">
+                                    <div class="solution-card">
+                                        <h3><span class="solution-icon">🔎</span> <span t-editable="1">Consultancy &amp; ACS Academy</span></h3>
+                                        <p t-editable="1">Alongside our platform, AcuCare Systems provides specialist advisory support to healthcare providers across the UK and internationally.</p>
+                                        <p>Services include:</p>
+                                        <ul class="feature-list">
+                                            <li>CQC compliance + governance transformation</li>
+                                            <li>Quality improvement and risk management frameworks</li>
+                                            <li>Digital adoption and workflow redesign</li>
+                                            <li>Training through ACS Academy</li>
+                                            <li>Capability building in clinical governance and digital quality systems</li>
+                                        </ul>
+                                        <p style="margin-top: 20px;">We combine expertise, technology and training to make long-term compliance sustainable.</p>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </section>
+                        </section>
 
-                    <section class="team" id="team">
-                        <div class="container">
-                            <div class="section-title">
-                                <div class="section-subtitle">Our Experts</div>
-                                <h2>Leadership &amp; Expertise</h2>
-                                <p>Together, we accelerate change responsibly — combining clinical credibility with technical capability.</p>
-                            </div>
-                            <div class="team-grid">
-                                <div class="team-member">
-                                    <div class="member-image member-1">
-                                        <i class="fa fa-user-md"></i>
-                                    </div>
-                                    <div class="member-info">
-                                        <h3>Clinical Leadership</h3>
-                                        <span class="role">Medical Directors &amp; Consultants</span>
-                                        <p>Our medical directors and consultants bring decades of NHS experience, specialising in governance, strategy, leadership and digital transformation. They ensure all solutions align with real clinical practice, regulatory expectations and workforce culture.</p>
-                                    </div>
+                        <section class="about" id="about">
+                            <div class="container">
+                                <div class="section-title">
+                                    <div class="section-subtitle">Our Company</div>
+                                    <h2 t-editable="1">About AcuCare Systems</h2>
                                 </div>
-                                <div class="team-member">
-                                    <div class="member-image member-2">
-                                        <i class="fa fa-laptop"></i>
-                                    </div>
-                                    <div class="member-info">
-                                        <h3>Technology &amp; Engineering</h3>
-                                        <span class="role">Software Engineers &amp; Data Scientists</span>
-                                        <p>Our engineering division builds secure, scalable and interoperable product ecosystems with healthcare-grade security, cloud infrastructure and rigorous development standards.</p>
-                                    </div>
-                                </div>
-                                <div class="team-member">
-                                    <div class="member-image member-3">
-                                        <i class="fa fa-bar-chart"></i>
-                                    </div>
-                                    <div class="member-info">
-                                        <h3>Advisory Network</h3>
-                                        <span class="role">Governance &amp; Compliance Specialists</span>
-                                        <p>Governance, data, policy, HR and regulatory specialists support clients with practical improvement programmes, from compliance baselining to operational change.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
+                                <div class="about-content oe_structure oe_empty">
+                                    <div class="about-text">
+                                        <h3 t-editable="1">Who We Are</h3>
+                                        <p t-editable="1">AcuCare Systems Ltd is a UK-based digital health company focused on governance, compliance and clinical quality.</p>
+                                        <p t-editable="1">We serve hospitals, clinics, community services, social care and independent providers that operate under regulated standards.</p>
+                                        <p>Our multidisciplinary teams include:</p>
+                                        <ul class="feature-list">
+                                            <li>Senior NHS consultants and medical leaders</li>
+                                            <li>Governance, policy and compliance specialists</li>
+                                            <li>Software engineers, data scientists and product experts</li>
+                                        </ul>
+                                        <p t-editable="1">We unite real clinical insight with scalable digital engineering to deliver tools that actually work in practice.</p>
 
-                    <section class="contact" id="contact">
-                        <div class="container">
-                            <div class="section-title">
-                                <div class="section-subtitle">Get In Touch</div>
-                                <h2>Let's Build Safer, Smarter Healthcare Together</h2>
-                                <p>Whether you're planning for inspection, modernising governance, or exploring digital transformation, we'd love to speak with you.</p>
-                            </div>
-                            <div class="contact-content">
-                                <div class="contact-info">
-                                    <div class="contact-item">
-                                        <div class="contact-icon">
-                                            <i class="fa fa-envelope"></i>
-                                        </div>
-                                        <div class="contact-text">
-                                            <h3>Email</h3>
-                                            <p><a href="mailto:info@acucaresystems.com">info@acucaresystems.com</a></p>
+                                        <h3 style="margin-top: 30px;">What Makes Us Different</h3>
+                                        <ul class="feature-list">
+                                            <li>Designed by clinicians, validated by governance experts</li>
+                                            <li>Balanced AI — supporting decision-making, never replacing it</li>
+                                            <li>Built for multi-site, multi-service organisations</li>
+                                            <li>Scalable engineering and transparent UK-led oversight</li>
+                                            <li>Equal focus on people, process and platform — not just software</li>
+                                        </ul>
+                                        <p style="margin-top: 20px; font-weight: 500; color: var(--primary);">AcuCare Systems doesn't simply deliver software; we help build safer, more accountable organisations.</p>
+
+                                        <div class="stats">
+                                            <div class="stat-item">
+                                                <div class="stat-number">50+</div>
+                                                <div class="stat-label">Healthcare Partners</div>
+                                            </div>
+                                            <div class="stat-item">
+                                                <div class="stat-number">100%</div>
+                                                <div class="stat-label">Compliance Success</div>
+                                            </div>
+                                            <div class="stat-item">
+                                                <div class="stat-number">24/7</div>
+                                                <div class="stat-label">Support Available</div>
+                                            </div>
                                         </div>
                                     </div>
-
-                                    <div class="contact-item">
-                                        <div class="contact-icon">
-                                            <i class="fa fa-phone"></i>
-                                        </div>
-                                        <div class="contact-text">
-                                            <h3>Phone</h3>
-                                            <p>+44 (0)XXX XXX XXXX</p>
+                                    <div class="about-image">
+                                        <div class="about-image-content">
+                                            <i class="fa fa-heartbeat" style="font-size: 4rem; margin-bottom: 20px;"></i>
+                                            <h3 style="font-size: 1.8rem; margin-bottom: 15px;">Our Vision</h3>
+                                            <p>AcuCare Systems aims to be the trusted operating system for clinical governance and regulatory compliance across healthcare organisations worldwide.</p>
                                         </div>
                                     </div>
-
-                                    <div class="contact-item">
-                                        <div class="contact-icon">
-                                            <i class="fa fa-map-marker"></i>
-                                        </div>
-                                        <div class="contact-text">
-                                            <h3>Office Locations</h3>
-                                            <p>UK Head Office + International Development Centre</p>
-                                        </div>
-                                    </div>
-
-                                    <div class="contact-item">
-                                        <div class="contact-icon">
-                                            <i class="fa fa-clock-o"></i>
-                                        </div>
-                                        <div class="contact-text">
-                                            <h3>Business Hours</h3>
-                                            <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
-                                        </div>
-                                    </div>
-
-                                    <a href="/#contact" class="btn btn-primary" style="margin-top: 20px; text-align: center;">
-                                        <i class="fa fa-calendar"></i>
-                                        Book a consultation
-                                    </a>
-                                </div>
-
-                                <div class="contact-form">
-                                    <form id="contactForm">
-                                        <div class="form-group">
-                                            <label for="name">Full Name</label>
-                                            <input type="text" id="name" name="name" required="required"/>
-                                        </div>
-
-                                        <div class="form-group">
-                                            <label for="email">Email Address</label>
-                                            <input type="email" id="email" name="email" required="required"/>
-                                        </div>
-
-                                        <div class="form-group">
-                                            <label for="organization">Organization</label>
-                                            <input type="text" id="organization" name="organization"/>
-                                        </div>
-
-                                        <div class="form-group">
-                                            <label for="interest">Area of Interest</label>
-                                            <select id="interest" name="interest">
-                                                <option value="">Select an option</option>
-                                                <option value="acu-care-os">AcuCare OS Platform</option>
-                                                <option value="consultancy">Consultancy Services</option>
-                                                <option value="training">ACS Academy Training</option>
-                                                <option value="partnership">Partnership Opportunities</option>
-                                                <option value="other">Other</option>
-                                            </select>
-                                        </div>
-
-                                        <div class="form-group">
-                                            <label for="message">Message</label>
-                                            <textarea id="message" name="message" placeholder="Tell us about your compliance challenges..." required="required"></textarea>
-                                        </div>
-
-                                        <button type="submit" class="btn-submit">Send Message</button>
-                                    </form>
                                 </div>
                             </div>
-                        </div>
-                    </section>
+                        </section>
+
+                        <section class="team" id="team">
+                            <div class="container">
+                                <div class="section-title">
+                                    <div class="section-subtitle">Our Experts</div>
+                                    <h2 t-editable="1">Leadership &amp; Expertise</h2>
+                                    <p t-editable="1">Together, we accelerate change responsibly — combining clinical credibility with technical capability.</p>
+                                </div>
+                                <div class="team-grid oe_structure oe_empty">
+                                    <div class="team-member">
+                                        <div class="member-image member-1">
+                                            <i class="fa fa-user-md"></i>
+                                        </div>
+                                        <div class="member-info">
+                                            <h3 t-editable="1">Clinical Leadership</h3>
+                                            <span class="role">Medical Directors &amp; Consultants</span>
+                                            <p t-editable="1">Our medical directors and consultants bring decades of NHS experience, specialising in governance, strategy, leadership and digital transformation. They ensure all solutions align with real clinical practice, regulatory expectations and workforce culture.</p>
+                                        </div>
+                                    </div>
+                                    <div class="team-member">
+                                        <div class="member-image member-2">
+                                            <i class="fa fa-laptop"></i>
+                                        </div>
+                                        <div class="member-info">
+                                            <h3 t-editable="1">Technology &amp; Engineering</h3>
+                                            <span class="role">Software Engineers &amp; Data Scientists</span>
+                                            <p t-editable="1">Our engineering division builds secure, scalable and interoperable product ecosystems with healthcare-grade security, cloud infrastructure and rigorous development standards.</p>
+                                        </div>
+                                    </div>
+                                    <div class="team-member">
+                                        <div class="member-image member-3">
+                                            <i class="fa fa-bar-chart"></i>
+                                        </div>
+                                        <div class="member-info">
+                                            <h3 t-editable="1">Advisory Network</h3>
+                                            <span class="role">Governance &amp; Compliance Specialists</span>
+                                            <p t-editable="1">Governance, data, policy, HR and regulatory specialists support clients with practical improvement programmes, from compliance baselining to operational change.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="contact" id="contact">
+                            <div class="container">
+                                <div class="section-title">
+                                    <div class="section-subtitle">Get In Touch</div>
+                                    <h2 t-editable="1">Let's Build Safer, Smarter Healthcare Together</h2>
+                                    <p t-editable="1">Whether you're planning for inspection, modernising governance, or exploring digital transformation, we'd love to speak with you.</p>
+                                </div>
+                                <div class="contact-content oe_structure oe_empty">
+                                    <div class="contact-info">
+                                        <div class="contact-item">
+                                            <div class="contact-icon">
+                                                <i class="fa fa-envelope"></i>
+                                            </div>
+                                            <div class="contact-text">
+                                                <h3>Email</h3>
+                                                <p><a href="mailto:info@acucaresystems.com">info@acucaresystems.com</a></p>
+                                            </div>
+                                        </div>
+
+                                        <div class="contact-item">
+                                            <div class="contact-icon">
+                                                <i class="fa fa-phone"></i>
+                                            </div>
+                                            <div class="contact-text">
+                                                <h3>Phone</h3>
+                                                <p>+44 (0)XXX XXX XXXX</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="contact-item">
+                                            <div class="contact-icon">
+                                                <i class="fa fa-map-marker"></i>
+                                            </div>
+                                            <div class="contact-text">
+                                                <h3>Office Locations</h3>
+                                                <p>UK Head Office + International Development Centre</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="contact-item">
+                                            <div class="contact-icon">
+                                                <i class="fa fa-clock-o"></i>
+                                            </div>
+                                            <div class="contact-text">
+                                                <h3>Business Hours</h3>
+                                                <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+                                            </div>
+                                        </div>
+
+                                        <a href="/#contact" class="btn btn-primary" style="margin-top: 20px; text-align: center;">
+                                            <i class="fa fa-calendar"></i>
+                                            Book a consultation
+                                        </a>
+                                    </div>
+
+                                    <div class="contact-form">
+                                        <form id="contactForm">
+                                            <div class="form-group">
+                                                <label for="name">Full Name</label>
+                                                <input type="text" id="name" name="name" required="required"/>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="email">Email Address</label>
+                                                <input type="email" id="email" name="email" required="required"/>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="organization">Organization</label>
+                                                <input type="text" id="organization" name="organization"/>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="interest">Area of Interest</label>
+                                                <select id="interest" name="interest">
+                                                    <option value="">Select an option</option>
+                                                    <option value="acu-care-os">AcuCare OS Platform</option>
+                                                    <option value="consultancy">Consultancy Services</option>
+                                                    <option value="training">ACS Academy Training</option>
+                                                    <option value="partnership">Partnership Opportunities</option>
+                                                    <option value="other">Other</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="message">Message</label>
+                                                <textarea id="message" name="message" placeholder="Tell us about your compliance challenges..." required="required"></textarea>
+                                            </div>
+
+                                            <button type="submit" class="btn-submit">Send Message</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
                 </div>
             </t>
         </field>
